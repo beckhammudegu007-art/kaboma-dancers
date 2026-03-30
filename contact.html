@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Kaboma Dancers - Book performances, workshops, or inquire about our services in Kenya. Located in Nairobi.">
+    <meta name="keywords" content="contact Kaboma Dancers, book Kenyan dance performance, dance workshop booking, Nairobi cultural events">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us - Kaboma Dancers</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23c41e3a'/%3E%3Ctext x='50' y='65' font-size='40' text-anchor='middle' fill='white'%3E%F0%9F%8E%83%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Kaboma</span>
+                    <span class="logo-subtext">Dancers</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch to book your unforgettable dance experience</p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title centered">Find Us</h2>
+            <p class="section-subtitle centered">Located in the heart of Nairobi, Kenya</p>
+            <div class="map-wrapper">
+                <!-- Google Maps - Nairobi, Kenya location -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808419374904!2d36.8219469!3d-1.2920659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d1c8d5c3%3A0x7c4c4c4c4c4c4c4c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <div class="map-info-item">
+                    <span class="map-icon">📍</span>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="map-info-item">
+                    <span class="map-icon">🅿️</span>
+                    <div>
+                        <h4>Parking</h4>
+                        <p>Available at venue</p>
+                    </div>
+                </div>
+                <div class="map-info-item">
+                    <span class="map-icon">🚌</span>
+                    <div>
+                        <h4>Public Transport</h4>
+                        <p>Walking distance from bus stop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <p class="contact-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+                    
+                    <form id="contactForm" class="contact-form" action="contact.php" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="live-performance">Live Dance Performance</option>
+                                <option value="workshop">Dance Workshop</option>
+                                <option value="photo-session">Photo/Video Session</option>
+                                <option value="private-event">Private Event</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="wedding">Wedding Performance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="eventDate">Preferred Date *</label>
+                                <input type="date" id="eventDate" name="eventDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventTime">Preferred Time</label>
+                                <select id="eventTime" name="eventTime">
+                                    <option value="">Select time</option>
+                                    <option value="morning">Morning (8AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                                    <option value="evening">Evening (5PM - 9PM)</option>
+                                    <option value="flexible">Flexible / Anytime</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration">Estimated Duration</label>
+                                <select id="duration" name="duration">
+                                    <option value="">Select duration</option>
+                                    <option value="30-min">30 minutes</option>
+                                    <option value="1-hour">1 hour</option>
+                                    <option value="2-hours">2 hours</option>
+                                    <option value="3-hours">3 hours</option>
+                                    <option value="half-day">Half Day</option>
+                                    <option value="full-day">Full Day</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" placeholder="e.g., 50">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Event Location</label>
+                            <input type="text" id="location" name="location" placeholder="e.g., Serena Hotel, Nairobi">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="specialRequirements">Special Requirements</label>
+                            <textarea id="specialRequirements" name="specialRequirements" rows="3" placeholder="Any special requests, dietary needs, accessibility requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell us more about your event..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Subscribe to our newsletter for updates and special offers</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Send Booking Request</button>
+                        
+                        <div id="formResponse" class="form-response"></div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Kenya</p>
+                                <p>We serve clients across Kenya and internationally</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@kabomadancers.co.ke</p>
+                                <p>We respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+254 724 883 4959</p>
+                                <p>Mon-Sat: 8am - 6pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-details">
+                                <h3>Social Media</h3>
+                                <div class="social-links">
+                                    <a href="https://facebook.com/kabomadancers" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                    <a href="https://instagram.com/kabomadancers" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="https://twitter.com/kabomadancers" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                                    <a href="https://youtube.com/kabomadancers" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Info Card -->
+                    <div class="quick-info-card">
+                        <h3>Quick Booking Info</h3>
+                        <ul>
+                            <li><strong>Booking Notice:</strong> 2 weeks minimum</li>
+                            <li><strong>Service Area:</strong> Kenya & International</li>
+                            <li><strong>Languages:</strong> English, Swahili</li>
+                            <li><strong>Payment:</strong> Cash, Mobile Money, Bank Transfer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title centered">Common Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I book a performance?</h3>
+                    <p>Simply fill out the contact form above or call us directly. We'll discuss your requirements and provide a customized quote.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is your booking process?</h3>
+                    <p>1. Initial consultation → 2. Quote → 3. Booking confirmation → 4. Performance preparation → 5. Event day!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer packages?</h3>
+                    <p>Yes! We have Basic, Standard, and Premium packages. We also offer custom packages for special events.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What areas do you serve?</h3>
+                    <p>We are based in Kenya and serve all regions including Nairobi, Mombasa, Kisumu, Nakuru, and surrounding areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Kaboma Dancers</h3>
+                    <p>Bringing the rhythm and spirit of Kenyan dance to the world since our establishment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 Kenya</li>
+                        <li>📧 info@kabomadancers.co.ke</li>
+                        <li>📱 +254 700 000 000</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/kabomadancers" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/kabomadancers" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/kabomadancers" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/kabomadancers" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kaboma Dancers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact Form Handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const formResponse = document.getElementById('formResponse');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    const originalBtnText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitBtn.disabled = true;
+                    
+                    // Get form data
+                    const formData = new FormData(form);
+                    
+                    // Send AJAX request
+                    fetch('contact.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Hide loading state
+                        submitBtn.innerHTML = originalBtnText;
+                        submitBtn.disabled = false;
+                        
+                        // Show response message
+                        if (data.success) {
+                            formResponse.innerHTML = '<div class="form-success">' + data.message + '</div>';
+                            form.reset();
+                        } else {
+                            let errorHtml = '<div class="form-error">' + data.message + '</div>';
+                            if (data.errors && data.errors.length > 0) {
+                                errorHtml += '<ul class="form-errors">';
+                                data.errors.forEach(function(error) {
+                                    errorHtml += '<li>' + error + '</li>';
+                                });
+                                errorHtml += '</ul>';
+                            }
+                            formResponse.innerHTML = errorHtml;
+                        }
+                        
+                        // Scroll to response
+                        formResponse.scrollIntoView({ behavior: 'smooth' });
+                    })
+                    .catch(error => {
+                        // Hide loading state
+                        submitBtn.innerHTML = originalBtnText;
+                        submitBtn.disabled = false;
+                        
+                        // Show error message
+                        formResponse.innerHTML = '<div class="form-error">Sorry, there was an error sending your message. Please try again or contact us directly by phone.</div>';
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
