@@ -5,7 +5,7 @@
  */
 
 // Configuration
-$toEmail = 'kabomadancers@gmail.com';
+$toEmail = 'kabomaculturaldance@gmail.com';
 $subjectPrefix = 'Kaboma Dancers - New Booking Request';
 $allowedServices = ['live-performance', 'workshop', 'photo-session', 'private-event', 'corporate', 'wedding', 'other'];
 $allowedTimes = ['morning', 'afternoon', 'evening', 'flexible'];
