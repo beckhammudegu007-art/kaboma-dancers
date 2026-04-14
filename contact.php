@@ -1,12 +1,12 @@
 <?php
 /**
- * Kaboma Dancers - Contact Form Handler
+ * Kaboma Cultural Dance - Contact Form Handler
  * Processes booking requests and sends email notifications
  */
 
 // Configuration
 $toEmail = 'kabomaculturaldance@gmail.com';
-$subjectPrefix = 'Kaboma Dancers - New Booking Request';
+$subjectPrefix = 'Kaboma Cultural Dance - New Booking Request';
 $allowedServices = ['live-performance', 'workshop', 'photo-session', 'private-event', 'corporate', 'wedding', 'other'];
 $allowedTimes = ['morning', 'afternoon', 'evening', 'flexible'];
 $allowedDurations = ['30-min', '1-hour', '2-hours', '3-hours', 'half-day', 'full-day'];
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $emailBody = "
 <html>
 <head>
-    <title>New Booking Request - Kaboma Dancers</title>
+    <title>New Booking Request - Kaboma Cultural Dance</title>
 </head>
 <body style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #333;\">
     <div style=\"max-width: 600px; margin: 0 auto; padding: 20px;\">
@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>$message</p>
         
         <p style=\"margin-top: 30px; font-size: 12px; color: #666;\">
-            This message was sent from the Kaboma Dancers website contact form.
+            This message was sent from the Kaboma Cultural Dance website contact form.
         </p>
     </div>
 </body>
@@ -157,11 +157,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mail($toEmail, $emailSubject, $emailBody, $headers)) {
             
             // Send confirmation email to customer
-            $confirmationSubject = "Booking Request Received - Kaboma Dancers";
+            $confirmationSubject = "Booking Request Received - Kaboma Cultural Dance";
             $confirmationBody = "
 <html>
 <head>
-    <title>Booking Request Received - Kaboma Dancers</title>
+    <title>Booking Request Received - Kaboma Cultural Dance</title>
 </head>
 <body style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #333;\">
     <div style=\"max-width: 600px; margin: 0 auto; padding: 20px;\">
@@ -181,11 +181,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p style=\"margin-top: 30px;\">If you have any urgent inquiries, please call us directly.</p>
         
         <p style=\"margin-top: 30px;\">Warm regards,<br>
-        <strong>The Kaboma Dancers Team</strong></p>
+        <strong>The Kaboma Cultural Dance Team</strong></p>
         
         <hr style=\"margin-top: 30px; border: none; border-top: 1px solid #ddd;\">
         <p style=\"font-size: 12px; color: #666;\">
-            Kaboma Dancers - Authentic Kenyan Dance Company<br>
+            Kaboma Cultural Dance - Authentic Kenyan Dance Company<br>
             Email: $toEmail
         </p>
     </div>
@@ -195,7 +195,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             $confirmationHeaders = "MIME-Version: 1.0" . "\r\n";
             $confirmationHeaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            $confirmationHeaders .= "From: Kaboma Dancers <$toEmail>" . "\r\n";
+            $confirmationHeaders .= "From: Kaboma Cultural Dance <$toEmail>" . "\r\n";
             
             // Send confirmation email (don't fail if this doesn't go through)
             mail($email, $confirmationSubject, $confirmationBody, $confirmationHeaders);

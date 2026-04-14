@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    console.log('Kaboma Dancers website loaded successfully!');
+    console.log('Kaboma Cultural Dance website loaded successfully!');
 });
 
 // Scroll to Top Button
