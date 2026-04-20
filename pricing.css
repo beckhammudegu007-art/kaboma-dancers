@@ -1,0 +1,237 @@
+/* Pricing Section */
+.pricing-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.pricing-card.featured {
+    background: white;
+    border: 3px solid var(--primary-color);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transform: rotate(45deg);
+}
+
+.pricing-header {
+    background: linear-gradient(135deg, var(--dark-color) 0%, #16213e 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.pricing-header p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.pricing-price {
+    text-align: center;
+    padding: 30px 0;
+    background: white;
+}
+
+.pricing-price .currency {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    vertical-align: top;
+}
+
+.pricing-price .amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.pricing-price .period {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.pricing-features {
+    padding: 0 30px 30px;
+    list-style: none;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    color: var(--text-color);
+}
+
+.pricing-features li.not-included {
+    color: var(--text-light);
+    text-decoration: line-through;
+}
+
+.btn-block {
+    display: block;
+    width: calc(100% - 60px);
+    margin: 0 30px 30px;
+}
+
+.pricing-card.featured .btn-primary {
+    background: var(--primary-color);
+}
+
+/* Workshop Pricing */
+.workshop-pricing {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.workshop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.workshop-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.workshop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.workshop-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.workshop-card h3 {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.workshop-duration {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.workshop-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.workshop-card .btn-block {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+}
+
+/* Photo Pricing */
+.photo-pricing {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.photo-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.photo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.photo-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.photo-card h3 {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.photo-card > p {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.photo-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 25px;
+}
+
+.photo-card .pricing-features {
+    text-align: left;
+}
+
+/* Pricing CTA */
+.pricing-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #e74c3c 100%);
+    color: white;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .pricing-grid,
+    .workshop-grid,
+    .photo-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
