@@ -2593,3 +2593,70 @@ body {
 }
 
 
+/* =========================
+   HERO SLIDER BACKGROUND
+========================= */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slider container */
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  display: flex;
+  animation: slideShow 12s infinite;
+  z-index: 0;
+}
+
+/* Each slide */
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6; /* makes images translucent */
+}
+
+/* YOUR IMAGES (replace paths if needed) */
+.slide1 {
+  background-image: url('images/hero1.jpg');
+}
+
+.slide2 {
+  background-image: url('images/hero2.jpg');
+}
+
+.slide3 {
+  background-image: url('images/hero3.jpg');
+}
+
+/* Smooth movement every 3 seconds */
+@keyframes slideShow {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Make sure text stays ABOVE images */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* keeps text readable */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
