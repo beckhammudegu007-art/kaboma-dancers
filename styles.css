@@ -1,3 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* REMOVE ANY TOP GAP CAUSED BY FIRST ELEMENT */
+body {
+  padding-top: 0 !important;
+}
+
+/* FIX HEADER SPACING */
+header.header {
+  margin: 0;
+  padding: 0;
+}
+
+/* FORCE NAVBAR TO TOUCH TOP EDGE */
+.navbar {
+  margin-top: 0;
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* REMOVE ANY TOP GAP CAUSED BY FIRST ELEMENT */
+body {
+  padding-top: 0 !important;
+}
+
+/* FIX HEADER SPACING */
+header.header {
+  margin: 0;
+  padding: 0;
+}
+
+/* FORCE NAVBAR TO TOUCH TOP EDGE */
+.navbar {
+  margin-top: 0;
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
