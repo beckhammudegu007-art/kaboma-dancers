@@ -2503,9 +2503,6 @@ body {
   justify-content: space-between;
 }
 
-/* =========================
-   FIX 4: LOGO LEFT OF TEXT
-========================= */
 .logo {
   display: flex;
   align-items: center;
@@ -2518,9 +2515,6 @@ body {
   width: auto;
 }
 
-/* =========================
-   OPTIONAL: PREVENT OVERLAP ISSUES
-========================= */
 .header {
   position: relative;
   z-index: 10;
