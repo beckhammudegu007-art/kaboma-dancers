@@ -2494,9 +2494,6 @@ body {
   position: relative;
 }
 
-/* =========================
-   FIX 3: NAVBAR LAYOUT CLEAN
-========================= */
 .navbar {
   display: flex;
   align-items: center;
@@ -2519,3 +2516,80 @@ body {
   position: relative;
   z-index: 10;
 }
+
+.hero {
+  padding-top: 120px;
+}
+
+body {
+  margin: 0;
+  padding-top: 90px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 55px;
+  width: auto;
+}
+
+/* =========================
+   FIX 1: PUSH PAGE BELOW NAVBAR
+========================= */
+body {
+  margin: 0;
+  padding-top: 90px; /* pushes everything below fixed navbar */
+}
+
+/* =========================
+   FIX 2: HERO NOT HIDDEN
+========================= */
+.hero {
+  padding-top: 120px; /* ensures badge + text are visible */
+  position: relative;
+}
+
+.hero-badge {
+  display: inline-block;
+  z-index: 5;
+  position: relative;
+}
+
+/* =========================
+   FIX 3: NAVBAR LAYOUT CLEAN
+========================= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   FIX 4: LOGO LEFT OF TEXT
+========================= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 55px;
+  width: auto;
+}
+
+/* =========================
+   OPTIONAL: PREVENT OVERLAP ISSUES
+========================= */
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+
