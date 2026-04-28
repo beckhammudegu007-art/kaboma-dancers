@@ -7,35 +7,47 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #f4f1ec;
-      text-align: center;
       color: #2b2b2b;
     }
-<!-- NAVIGATION -->
-<div style="background:#5a4636; padding:15px 0; text-align:center;">
-  
-  <a href="index.html" style="color:#f5f0e6; margin:0 15px; text-decoration:none; font-weight:bold;">Home</a>
-  <a href="about.html" style="color:#f5f0e6; margin:0 15px; text-decoration:none; font-weight:bold;">About</a>
-  <a href="services.html" style="color:#f5f0e6; margin:0 15px; text-decoration:none; font-weight:bold;">Services</a>
-  <a href="gallery.html" style="color:#f5f0e6; margin:0 15px; text-decoration:none; font-weight:bold;">Gallery</a>
-  <a href="pricing.html" style="color:#f5f0e6; margin:0 15px; text-decoration:none; font-weight:bold;">Pricing</a>
-  <a href="contact.html" style="color:#f5f0e6; margin:0 15px; text-decoration:none; font-weight:bold;">Contact</a>
 
-</div>
+    /* NAVBAR */
+    .navbar {
+      background: #5a4636;
+      padding: 15px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #f5f0e6;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .navbar a:hover {
+      color: #ffd700;
+    }
+
+    /* PAGE CONTAINER */
     .container {
-      max-width: 750px;
-      margin: 100px auto;
+      max-width: 800px;
+      margin: 80px auto;
       background: white;
       padding: 50px;
       border-radius: 15px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      border-top: 6px solid #8b0000;
+      text-align: center;
     }
 
     h1 {
-      color: #8b0000;
+      color: #5a4636;
       margin-bottom: 20px;
     }
 
@@ -45,8 +57,8 @@
     }
 
     .highlight {
-      font-weight: bold;
       color: #b8860b;
+      font-weight: bold;
       margin-top: 15px;
     }
 
@@ -56,7 +68,7 @@
     }
 
     a {
-      color: #8b0000;
+      color: #5a4636;
       font-weight: bold;
       text-decoration: none;
     }
@@ -65,21 +77,31 @@
       text-decoration: underline;
     }
 
-    .divider {
-      margin: 25px auto;
-      width: 60px;
-      height: 3px;
-      background: #b8860b;
+    /* OPTIONAL FUTURE BACKGROUND LAYER */
+    .bg-note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: gray;
     }
+
   </style>
 </head>
 
 <body>
 
+  <!-- NAVIGATION -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- CONTENT -->
   <div class="container">
     <h1>Pricing Information</h1>
-
-    <div class="divider"></div>
 
     <p>
       For pricing please contact us directly for a customized quote based on your event type, location, and duration.
@@ -90,13 +112,18 @@
     </p>
 
     <div class="contact">
-      📧 Email us: <a href="mailto:kabomadancers@gmail.com">kabomadancers@gmail.com</a><br><br>
+      📧 Email: <a href="mailto:kabomadancers@gmail.com">kabomadancers@gmail.com</a><br><br>
 
-      📞 Call us:<br>
+      📞 Call Us:<br>
       +254 724 834550<br>
       +254 796 222543
     </div>
+
+    <div class="bg-note">
+      (Background image upgrade will be added next after upload)
+    </div>
+
   </div>
-  
+
 </body>
 </html>
