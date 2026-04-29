@@ -12,6 +12,12 @@
     background: rgba(0, 0, 0, 0.55);
     z-index: 0;
 }
+
+.pricing-section > * {
+    position: relative;
+    z-index: 1;
+}
+
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
