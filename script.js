@@ -416,3 +416,16 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.lang = lang;
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const icons = document.querySelectorAll(".social-icon-btn");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    icons.forEach(icon => observer.observe(icon));
+});
