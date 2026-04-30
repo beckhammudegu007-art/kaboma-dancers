@@ -2522,3 +2522,10 @@ img {
     40% { opacity: 0; }
     100% { opacity: 0; }
 }
+
+.performance-image video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
