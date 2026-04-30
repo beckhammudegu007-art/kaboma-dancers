@@ -1,186 +1,446 @@
-<!DOCTYPE html>
-
+no am saying in this code  <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Kaboma Cultural Dancers - Authentic Kenyan Dance Company</title>
-
-<meta name="description" content="Kaboma Cultural Dancers - Authentic Kenyan cultural performances, workshops, and events in Kenya.">
-<meta name="robots" content="index, follow">
-
-<!-- Fonts (optimized) -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-<!-- Icons -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- CSS (ONLY ONE FILE = FASTER) -->
-
-<link rel="stylesheet" href="styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kaboma Cultural Dancers - Authentic Kenyan Dance Company offering traditional and modern dance performances for local and international tourists. Book cultural dance shows, workshops, and photo sessions in Kenya.">
+    <meta name="keywords" content="Kenyan dance, cultural dance, traditional dance, tourist entertainment, Africa dance performances, Nairobi dance company, Maasai dance, workshop bookings">
+    <meta name="author" content="Kaboma Cultural Dancers">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kabomaculturaldance.co.ke/">
+    <meta property="og:title" content="Kaboma Cultural Dancers - Authentic Kenyan Dance Company">
+    <meta property="og:description" content="Experience the rhythm and spirit of Kenyan dance. Book traditional performances, workshops, and cultural experiences.">
+    <meta property="og:image" content="https://kabomaculturaldance.co.ke/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kabomaculturaldance.co.ke/">
+    <meta property="twitter:title" content="Kaboma Cultural Dancers - Authentic Kenyan Dance Company">
+    <meta property="twitter:description" content="Experience the rhythm and spirit of Kenyan dance. Book traditional performances, workshops, and cultural experiences.">
+    <meta property="twitter:image" content="https://kabomaculturaldance.co.ke/images/og-image.jpg">
+    
+    <!-- Schema.org Organization Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PerformingGroup",
+        "name": "Kaboma Cultural Dancers",
+        "description": "Authentic Kenyan dance company offering traditional and modern dance performances for tourists and locals.",
+        "url": "https://kabomaculturaldance.co.ke",
+        "logo": "https://kabomaculturaldance.co.ke/images/logo.png",
+        "image": "https://kabomaculturaldance.co.ke/images/hero.jpg",
+        "foundingDate": "2010",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+254-724-834-550",
+            "contactType": "customer service",
+            "email": "kabomadancers@gmail.com"
+        },
+        "sameAs": [
+            "https://www.facebook.com/kabomaculturaldancers",
+            "https://www.instagram.com/kabomaculturaldancers",
+            "https://www.youtube.com/@kabomaculturaldancers"
+        ]
+    }
+    </script>
+    
+    <title>Kaboma Cultural Dancers - Authentic Kenyan Dance Company</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stats.css">
+    <link rel="stylesheet" href="extra-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Kaboma Cultural Dancers" class="logo-img">
+                    <span class="logo-text">Kaboma</span>
+                    <span class="logo-subtext">Cultural Dancers</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- HEADER -->
+    <!-- Hero Section -->
+<section class="hero" id="main-content">
 
-<header class="header">
-  <nav class="navbar container">
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="Kaboma Cultural Dancers" loading="lazy">
-    </a>
-
-```
-<ul class="nav-menu">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="services.html">Services</a></li>
-  <li><a href="gallery.html">Gallery</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-```
-
-  </nav>
-</header>
-
-<!-- HERO (LIGHTWEIGHT) -->
-
-<section class="hero">
-
-  <div class="hero-content">
-    <h1>Experience the Rhythm of Kenya</h1>
-    <p>Authentic cultural dance performances and workshops</p>
-
-```
-<a href="services.html" class="btn btn-primary">Our Services</a>
-```
-
-  </div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="section">
-  <div class="container">
-    <h2>Discover Our Heritage</h2>
-    <p>Kaboma Cultural Dancers preserve and share Kenyan traditions through dance.</p>
-  </div>
-</section>
-
-<!-- STATS (SINGLE INSTANCE ONLY) -->
-
-<section class="stats">
-  <div class="container">
-    <div class="grid">
-      <div>15+ Years</div>
-      <div>500+ Shows</div>
-      <div>50+ Performers</div>
-      <div>10K+ Clients</div>
+    <!-- Background Slider -->
+    <div class="hero-slider">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
     </div>
-  </div>
-</section>
 
-<!-- FEATURED PERFORMANCE (OPTIMIZED VIDEO) -->
+    <div class="hero-overlay"></div>
 
-<section class="section">
-  <div class="container">
+    <div class="hero-content">
+        <span class="hero-badge">Authentic Kenyan Cultural Experience</span>
 
-```
-<h2>Featured Performance</h2>
+        <h1 class="hero-title">Experience the Rhythm of Kenya</h1>
 
-<div class="card">
+        <p class="hero-subtitle">
+            Immerse yourself in the vibrant traditions of Kenya through our authentic dance performances. Celebrating the rich cultural heritage that brings communities together.
+        </p>
 
-  <video controls preload="none" poster="images/video-poster.jpg">
-    <source src="videos/performance1.mp4" type="video/mp4">
-  </video>
+        <div class="hero-buttons">
+            <a href="services.html" class="btn btn-primary">Our Services</a>
+            <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+        </div>
 
-  <h3>Traditional Kenyan Dance</h3>
-  <p>Live cultural performances across Kenya.</p>
+        <div class="hero-features">
+            <div class="hero-feature">
+                <i class="fas fa-drum"></i>
+                <span>Traditional Performances</span>
+            </div>
 
-</div>
-```
+            <div class="hero-feature">
+                <i class="fas fa-users"></i>
+                <span>Interactive Workshops</span>
+            </div>
 
-  </div>
-</section>
-
-<!-- SERVICES -->
-
-<section class="section">
-  <div class="container">
-    <h2>Our Services</h2>
-
-```
-<div class="grid">
-  <div>Live Performances</div>
-  <div>Workshops</div>
-  <div>Photo Sessions</div>
-  <div>Private Events</div>
-</div>
-```
-
-  </div>
-</section>
-
-<!-- SOCIAL (FIXED + FAST + CLEAN) -->
-
-<section class="social">
-
-  <div class="container">
-
-```
-<h2>Follow Us</h2>
-
-<div class="social-icons">
-
-  <a href="https://instagram.com/kabomaculturaldancers" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://facebook.com/kabomaculturaldancers" target="_blank">
-    <i class="fab fa-facebook"></i>
-  </a>
-
-  <a href="https://tiktok.com/@kabomaculturaldancers" target="_blank">
-    <i class="fab fa-tiktok"></i>
-  </a>
-
-  <a href="https://youtube.com/@kabomaculturaldancers" target="_blank">
-    <i class="fab fa-youtube"></i>
-  </a>
-
-</div>
-```
-
-  </div>
+            <div class="hero-feature">
+                <i class="fas fa-camera"></i>
+                <span>Photo Sessions</span>
+            </div>
+        </div>
+    </div>
 
 </section>
 
-<!-- CTA -->
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="section-title centered">Discover Our Heritage</h2>
+                <p class="section-subtitle">Preserving Kenya's cultural legacy through the art of dance</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Welcome to Kaboma Cultural Dancers</h3>
+                    <p class="about-text">Kaboma Cultural Dancers is a premium Kenyan dance company dedicated to preserving and sharing the vibrant cultural traditions of Kenya through authentic performances. Our talented performers bring to life the diverse rhythms and movements that make Kenyan culture unique.</p>
+                    <p class="about-text">From traditional tribal dances to contemporary African performances, we offer unforgettable experiences for tourists and locals alike. Our team of passionate dancers has performed at venues across Kenya and internationally.</p>
+                    <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-drum"></i></div>
+                        <h3>Traditional Rhythms</h3>
+                        <p>Authentic performances showcasing Kenya's rich cultural diversity</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-globe-africa"></i></div>
+                        <h3>Global Reach</h3>
+                        <p>Professional performances that captivate audiences worldwide</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-hands-heart"></i></div>
+                        <h3>Living Heritage</h3>
+                        <p>Preserving and sharing Kenya's ancestral dance traditions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="cta">
-  <div class="container">
-    <h2>Book Your Experience</h2>
-    <a href="contact.html" class="btn btn-primary">Book Now</a>
-  </div>
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Live Performances</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Professional Team Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Performances -->
+    <section class="featured-performances">
+        <div class="container">
+            <h2 class="section-title centered">Featured Performances</h2>
+            <p class="section-subtitle">Experience the rich diversity of Kenyan culture through our authentic dance performances</p>
+            <div class="performances-grid">
+                <div class="performance-card">
+                <div class="performance-image">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/performance1.mp4" type="video/mp4">
+                    </video>
+                </div>   
+                    <div class="performance-content">
+                        <h3>Live Traditional Dances</h3>
+                        <p>Authentic live tribal performances showcasing the rhythm and spirit of Kenya's diverse ethnic communities</p>
+                        <a href="services.html" class="performance-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="performance-card">
+                    <div class="performance-image">
+                        <img src="images/gallery/gallery-2.jpg" alt="Cultural Festival" loading="lazy">
+                    </div>
+                    <div class="performance-content">
+                        <h3>Local and International Festivals</h3>
+                        <p>Vibrant festival performances celebrating Kenyan traditions, harvest seasons, and community milestones</p>
+                        <a href="services.html" class="performance-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="performance-card">
+                    <div class="performance-image">
+                        <img src="images/gallery/gallery-3.jpg" alt="Stage Show" loading="lazy">
+                    </div>
+                    <div class="performance-content">
+                        <h3>Private Events</h3>
+                        <p>Professional theatrical shows combining traditional and contemporary Kenyan dance styles in private events such as weddings and airport welcomings.</p>
+                        <a href="services.html" class="performance-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <div class="centered">
+                <a href="gallery.html" class="btn btn-primary">View All Performances</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title centered">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Kaboma Cultural Dancers made our safari experience unforgettable! Their energy and passion for their culture was infectious. A must-see for any visitor to Kenya!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Sarah M.</strong>
+                            <span>Tourist from USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"We hired Kaboma Cultural Dancers for our hotel's cultural night and they exceeded all expectations. Professional, talented, and amazing with our guests!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>James K.</strong>
+                            <span>Hotel Manager, Nairobi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The dance workshop was the highlight of our trip. Learning those moves was so much fun and we got amazing photos too!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Emma & David</strong>
+                            <span>Tourists from UK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Social Media Feeds -->
+<section class="social-feeds fancy-social-section">
+    <div class="container">
+
+        <h2 class="section-title centered">Follow Us on Social Media</h2>
+        <p class="section-subtitle">Stay updated with our latest performances and behind-the-scenes moments</p>
+
+        <div class="social-grid fancy-social-grid">
+
+            <a href="https://instagram.com/kabomaculturaldancers" target="_blank" class="social-feed-item">
+                <img src="images/social/social-1.jpg" alt="Kaboma performance 1" loading="lazy">
+                <div class="social-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+            <a href="https://facebook.com/kabomaculturaldancers" target="_blank" class="social-feed-item">
+                <img src="images/social/social-2.jpg" alt="Kaboma performance 2" loading="lazy">
+                <div class="social-overlay">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </a>
+
+            <a href="https://tiktok.com/@kabomaculturaldancers" target="_blank" class="social-feed-item">
+                <img src="images/social/social-3.jpg" alt="Kaboma performance 3" loading="lazy">
+                <div class="social-overlay">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </a>
+
+            <a href="https://youtube.com/@kabomaculturaldancers" target="_blank" class="social-feed-item">
+                <img src="images/social/social-4.jpg" alt="Kaboma performance 4" loading="lazy">
+                <div class="social-overlay">
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Clean single CTA button -->
+        <div class="centered social-follow">
+            <a href="https://instagram.com/kabomaculturaldancers" target="_blank" class="btn btn-primary">
+                Follow @kabomaculturaldancers
+            </a>
+        </div>
+
+    </div>
 </section>
 
-<!-- FOOTER -->
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Subscribe to our newsletter for updates on performances, events, and Kenyan cultural insights</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<footer class="footer">
-  <p>© 2026 Kaboma Cultural Dancers</p>
-</footer>
+    <!-- Kenyan Traditions Section -->
+    <section class="traditions">
+        <div class="container">
+            <h2 class="section-title centered">Our Cultural Heritage</h2>
+            <p class="section-subtitle">Discover the traditions that inspire our performances</p>
+            <div class="traditions-grid">
+                <div class="tradition-card">
+                    <div class="tradition-icon">🥁</div>
+                    <h3>Traditional Drumming</h3>
+                    <p>Experience the rhythmic heartbeat of Kenya through authentic drum performances</p>
+                </div>
+                <div class="tradition-card">
+                    <div class="tradition-icon">💃</div>
+                    <h3>Tribal Dances</h3>
+                    <p>From Maasai jumping dances to Luo traditional movements</p>
+                </div>
+                <div class="tradition-card">
+                    <div class="tradition-icon">🎭</div>
+                    <h3>Cultural Stories</h3>
+                    <p>Ancient stories brought to life through dance and performance</p>
+                </div>
+                <div class="tradition-card">
+                    <div class="tradition-icon">👘</div>
+                    <h3>Traditional Attire</h3>
+                    <p>Authentic Kenyan costumes and beadwork</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- SCRIPT (DEFER FOR SPEED) -->
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Kenyan Culture?</h2>
+                <p>Book your performance, workshop, or photo session with us today</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Book Now</a>
+                    <a href="pricing.html" class="btn btn-secondary btn-large">View Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js" defer></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <img src="images/logo.png" alt="Kaboma Cultural Dancers" class="footer-logo">
+                    <h3>Kaboma Cultural Dancers</h3>
+                    <p>Bringing the rhythm and spirit of Kenyan dance to the world since our establishment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 Maasai Market Collection, Karen, Nairobi</li>
+                        <li>📧 <a href="mailto:kabomadancers@gmail.com">kabomadancers@gmail.com</a></li>
+                        <li>📱 <a href="tel:0724834550">0724834550</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/kabomaculturaldancers" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/kabomaculturaldancers" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/kabomaculturaldancers" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/kabomaculturaldancers" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@kabomaculturaldancers" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kaboma Cultural Dancers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
