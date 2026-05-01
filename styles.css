@@ -2498,7 +2498,7 @@ img {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: slideShow 15s infinite;
+    animation: slideShow 30s infinite;
 }
 
 .slide1 {
@@ -2507,12 +2507,12 @@ img {
 
 .slide2 {
     background-image: url("images/hero2.jpg");
-    animation-delay: 5s;
+    animation-delay: 10s;
 }
 
 .slide3 {
     background-image: url("images/hero3.jpg");
-    animation-delay: 10s;
+    animation-delay: 20s;
 }
 
 @keyframes slideShow {
