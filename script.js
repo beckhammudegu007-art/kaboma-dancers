@@ -474,3 +474,36 @@ window.addEventListener('scroll', () => {
         started = true;
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-number");
+
+  counters.forEach(counter => {
+    const text = counter.innerText.trim();
+
+    let target = text.replace(/\D/g, "");
+    target = parseInt(target);
+
+    if (text.includes("K")) target *= 1000;
+
+    let count = 0;
+    const speed = target / 120;
+
+    function updateCounter() {
+      if (count < target) {
+        count += speed;
+
+        if (text.includes("K")) {
+          counter.innerText = Math.floor(count / 1000) + "K+";
+        } else {
+          counter.innerText = Math.floor(count) + "+";
+        }
+
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.innerText = text;
+      }
+    }
+
+    updateCounter();
+  });
+});
