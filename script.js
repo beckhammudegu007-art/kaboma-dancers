@@ -526,57 +526,54 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCounter();
   });
 });
-</script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".stat-number");
 
   counters.forEach(counter => {
-    const text = counter.innerText.trim();
+    const original = counter.innerText.trim();
 
-    let target = text;
+    let isK = original.includes("K");
+    let isPlus = original.includes("+");
 
-    // Handle K+
-    let isK = text.includes("K");
-    let isPlus = text.includes("+");
+    let target = original
+      .replace("K", "")
+      .replace("+", "")
+      .trim();
 
-    target = text.replace("K", "").replace("+", "");
     target = parseFloat(target);
 
     if (isNaN(target)) return;
 
-    const duration = 2000;
-    const stepTime = 10;
-    const steps = duration / stepTime;
-    const increment = target / steps;
-
-    let current = 0;
-
     counter.innerText = "0";
 
-    const update = () => {
-      current += increment;
+    const duration = 2000; // 2 seconds
+    const startTime = performance.now();
 
-      if (current < target) {
-        let display = Math.floor(current);
+    function animate(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      
+      const value = Math.floor(progress * target);
 
-        if (isK) {
-          counter.innerText = (display / 1000).toFixed(0) + "K+";
-        } else {
-          counter.innerText = display + (isPlus ? "+" : "");
-        }
-
-        setTimeout(update, stepTime);
+      if (isK) {
+        counter.innerText = (value / 1000).toFixed(0) + "K+";
       } else {
+        counter.innerText = value + (isPlus ? "+" : "");
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        // final exact value
         if (isK) {
           counter.innerText = (target / 1000) + "K+";
         } else {
           counter.innerText = target + (isPlus ? "+" : "");
         }
       }
-    };
+    }
 
-    update();
+    requestAnimationFrame(animate);
   });
 });
 </script>
