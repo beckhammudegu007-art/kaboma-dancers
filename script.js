@@ -474,3 +474,56 @@ window.addEventListener('scroll', () => {
         started = true;
     }
 });
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-number");
+
+  counters.forEach(counter => {
+    const originalText = counter.innerText.trim();
+
+    // Convert values like "10K+" or "15+" into numbers
+    let target = originalText;
+
+    if (target.includes("K")) {
+      target = parseFloat(target.replace("K", "")) * 1000;
+    } else {
+      target = parseFloat(target);
+    }
+
+    const suffix = originalText.includes("K") ? "K+" : "+";
+    const duration = 2000; // 2 seconds animation
+    const stepTime = 10;
+    const steps = duration / stepTime;
+    const increment = target / steps;
+
+    let current = 0;
+
+    const updateCounter = () => {
+      current += increment;
+
+      if (current < target) {
+        let displayValue = Math.floor(current);
+
+        // Convert back to K format if needed
+        if (target >= 1000) {
+          counter.innerText = (displayValue / 1000).toFixed(0) + "K+";
+        } else {
+          counter.innerText = displayValue + "+";
+        }
+
+        setTimeout(updateCounter, stepTime);
+      } else {
+        // Final correct value
+        if (target >= 1000) {
+          counter.innerText = (target / 1000) + "K+";
+        } else {
+          counter.innerText = target + "+";
+        }
+      }
+    };
+
+    counter.innerText = "0";
+    updateCounter();
+  });
+});
+</script>
