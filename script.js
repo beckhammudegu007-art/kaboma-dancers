@@ -429,3 +429,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
     icons.forEach(icon => observer.observe(icon));
 });
+const counters = document.querySelectorAll('.stat-number');
+
+const runCounter = () => {
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+
+        const speed = target / 120;
+
+        const updateCount = () => {
+            count += speed;
+
+            if (count < target) {
+                if (target >= 10000) {
+                    counter.innerText = Math.floor(count / 1000) + "K+";
+                } else {
+                    counter.innerText = Math.floor(count) + "+";
+                }
+
+                requestAnimationFrame(updateCount);
+            } else {
+                if (target >= 10000) {
+                    counter.innerText = "10K+";
+                } else {
+                    counter.innerText = target + "+";
+                }
+            }
+        };
+
+        updateCount();
+    });
+};
+
+let started = false;
+
+window.addEventListener('scroll', () => {
+    const statsSection = document.querySelector('.statistics');
+
+    const sectionTop = statsSection.getBoundingClientRect().top;
+
+    if (sectionTop < window.innerHeight - 100 && !started) {
+        runCounter();
+        started = true;
+    }
+});
