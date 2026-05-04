@@ -527,3 +527,56 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-number");
+
+  counters.forEach(counter => {
+    const text = counter.innerText.trim();
+
+    let target = text;
+
+    // Handle K+
+    let isK = text.includes("K");
+    let isPlus = text.includes("+");
+
+    target = text.replace("K", "").replace("+", "");
+    target = parseFloat(target);
+
+    if (isNaN(target)) return;
+
+    const duration = 2000;
+    const stepTime = 10;
+    const steps = duration / stepTime;
+    const increment = target / steps;
+
+    let current = 0;
+
+    counter.innerText = "0";
+
+    const update = () => {
+      current += increment;
+
+      if (current < target) {
+        let display = Math.floor(current);
+
+        if (isK) {
+          counter.innerText = (display / 1000).toFixed(0) + "K+";
+        } else {
+          counter.innerText = display + (isPlus ? "+" : "");
+        }
+
+        setTimeout(update, stepTime);
+      } else {
+        if (isK) {
+          counter.innerText = (target / 1000) + "K+";
+        } else {
+          counter.innerText = target + (isPlus ? "+" : "");
+        }
+      }
+    };
+
+    update();
+  });
+});
+</script>
