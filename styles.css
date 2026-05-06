@@ -2413,7 +2413,7 @@ img {
     font-size: 1.2rem;
     box-shadow: 0 4px 15px rgba(196, 30, 58, 0.4);
     transition: var(--transition);
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .scroll-to-top:hover {
