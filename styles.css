@@ -2641,3 +2641,14 @@ img {
     transition: 0.3s ease;
 }
 
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+    z-index: 9999;
+}
+
