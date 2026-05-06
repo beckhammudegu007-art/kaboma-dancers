@@ -2621,3 +2621,23 @@ img {
 .social-icon.facebook { color: #1877F2; }
 .social-icon.tiktok { color: #000000; }
 .social-icon.youtube { color: #FF0000; }
+
+.whatsapp-button {
+    position: fixed;
+    right: 25px;
+    bottom: 120px; /* sits above scroll-to-top */
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    z-index: 10001;
+    transition: 0.3s ease;
+}
+
