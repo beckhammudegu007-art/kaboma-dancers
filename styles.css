@@ -2625,7 +2625,8 @@ img {
 .whatsapp-button {
     position: fixed;
     right: 25px;
-    bottom: 120px; /* sits above scroll-to-top */
+    top: 50%;
+    transform: translateY(-50%);
     width: 55px;
     height: 55px;
     background: #25D366;
@@ -2635,13 +2636,12 @@ img {
     align-items: center;
     justify-content: center;
     font-size: 28px;
-    text-decoration: none;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     z-index: 10001;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     transition: 0.3s ease;
 }
 
 .whatsapp-button:hover {
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }
 
